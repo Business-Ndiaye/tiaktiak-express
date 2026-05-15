@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiak-Tiak Express | Livraison Dakar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800&display=swap');
+        :root { --orange-vif: #fb8c00; }
+        body { font-family: 'Work Sans', sans-serif; }
+        .font-brand { font-family: 'Righteous', cursive; }
+        .bg-brand-orange { background-color: var(--orange-vif); }
+        .text-brand-orange { color: var(--orange-vif); }
+        @keyframes pulse-green {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .animate-whatsapp { animation: pulse-green 2s infinite; }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header class="py-6 px-4 bg-black text-white flex justify-center items-center sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <div class="bg-brand-orange p-2 rounded-lg">
+                <i class="fas fa-motorcycle text-black text-2xl"></i>
+            </div>
+            <h1 class="font-brand text-2xl tracking-wider uppercase">Tiak-Tiak <span class="text-brand-orange">Express</span></h1>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white py-20 px-6 text-center border-b-8 border-brand-orange">
+        <h2 class="font-brand text-5xl mb-6 leading-tight">Livraison <span class="text-brand-orange">Rapide</span> à Dakar</h2>
+        <p class="text-gray-400 text-xl mb-8 max-w-md mx-auto">Besoin d'envoyer un colis urgent ? Nos coursiers sont déjà en route.</p>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-extrabold mb-10 text-center uppercase tracking-tighter italic underline decoration-brand-orange">Nos Tarifs Fixes</h3>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="flex justify-between items-center bg-white p-6 rounded-2xl shadow-sm border-l-8 border-black">
+                    <div><h4 class="text-xl font-bold">Plateau</h4><p class="text-gray-500 text-sm">Centre-ville & Médina</p></div>
+                    <div class="text-2xl font-black text-brand-orange">1000<sup>F</sup></div>
+                </div>
+                <div class="flex justify-between items-center bg-white p-6 rounded-2xl shadow-sm border-l-8 border-brand-orange">
+                    <div><h4 class="text-xl font-bold">Almadies</h4><p class="text-gray-500 text-sm">Ngor / Virage / Yoff</p></div>
+                    <div class="text-2xl font-black text-brand-orange">1500<sup>F</sup></div>
+                </div>
+                <div class="flex justify-between items-center bg-white p-6 rounded-2xl shadow-sm border-l-8 border-black">
+                    <div><h4 class="text-xl font-bold">Banlieue</h4><p class="text-gray-500 text-sm">Pikine / Guédiawaye / PA</p></div>
+                    <div class="text-2xl font-black text-brand-orange">2000<sup>F</sup></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages (NOUVEAU) -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-extrabold mb-10 text-center uppercase tracking-tighter italic">Ils nous font confiance</h3>
+
+            <div class="space-y-6">
+                <!-- Témoignage 1 -->
+                <div class="bg-gray-50 p-6 rounded-3xl relative border border-gray-100 shadow-sm">
+                    <i class="fas fa-quote-left text-brand-orange text-4xl absolute top-4 right-6 opacity-20"></i>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed text-lg">
+                        "En tant que vendeuse en ligne, la rapidité est capitale. Tiak-Tiak Express livre mes clientes à Dakar Plateau en moins de 30 minutes. Un service impeccable !"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white font-bold">AD</div>
+                        <div>
+                            <p class="font-bold">Awa Diop</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">E-commerce Beauté</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="bg-gray-50 p-6 rounded-3xl relative border border-gray-100 shadow-sm">
+                    <i class="fas fa-quote-left text-brand-orange text-4xl absolute top-4 right-6 opacity-20"></i>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed text-lg">
+                        "Le meilleur service de Dakar. Honnêtes, polis et surtout très ponctuels pour mes documents urgents entre la Médina et les Almadies."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center text-black font-bold">MS</div>
+                        <div>
+                            <p class="font-bold">Moussa Sall</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">Gérant de Boutique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="bg-gray-50 p-6 rounded-3xl relative border border-gray-100 shadow-sm">
+                    <i class="fas fa-quote-left text-brand-orange text-4xl absolute top-4 right-6 opacity-20"></i>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed text-lg">
+                        "Fini le stress des embouteillages. Je leur confie mes livraisons vers la banlieue les yeux fermés. Le prix est fixe et sans surprise."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white font-bold">FK</div>
+                        <div>
+                            <p class="font-bold">Fatou Kane</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">Particulier (Liberté 6)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-20 px-6 text-center pb-36">
+        <p class="mb-2">© 2023 Tiak-Tiak Express Dakar</p>
+        <p class="text-xs uppercase tracking-widest text-brand-orange">Propulsé par Yaakaar Labs</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-8 left-0 right-0 px-6 z-50">
+        <a href="https://wa.me/221770000000" class="animate-whatsapp flex items-center justify-center gap-4 bg-[#25D366] text-white py-5 rounded-2xl shadow-2xl active:scale-95 transition-transform">
+        <i class="fab fa-whatsapp text-3xl"></i>
+            <span class="text-xl font-extrabold uppercase tracking-tight">Commander un coursier</span>
+    </a>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
